@@ -1,0 +1,7 @@
+categoryshowcasepro_configuration:
+  path: /categoryshowcasepro/configuration
+  methods: [GET, POST]
+  defaults:
+    _controller: 'PrestaShop\Module\categoryshowcasepro\Controller\Admin\AdminConfigController::index'
+    _legacy_controller: AdminConfigController
+    _legacy_link: AdminConfigController

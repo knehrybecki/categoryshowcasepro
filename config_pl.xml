@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>categoryshowcasepro</name>
+    <displayName><![CDATA[Category Showcase Pro]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[show products in category box]]></description>
+    <author><![CDATA[Kamil Nehrybecki]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+</module>

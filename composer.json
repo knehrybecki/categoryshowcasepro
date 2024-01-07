@@ -1,0 +1,23 @@
+{
+  "name": "prestashop/categoryshowcasepro",
+  "authors": [
+    {
+      "name": "Kamil Nehrybecki"
+    },
+    {
+      "name": "Kamil Nehrybecki"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\Module\\categoryshowcasepro\\": "src/"
+    },
+    "config": {
+      "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+  },
+  "require": {
+    "twig/twig": "^3.8"
+  }
+}

@@ -1,0 +1,25 @@
+services:
+  _defaults:
+    public: true
+    autowire: true
+    autoconfigure: true
+
+  categoryshowcasepro.controller.admin.config_controller:
+    class: 'PrestaShop\Module\categoryshowcasepro\Controller\Admin\AdminConfigController'
+    arguments:
+      - "@categoryshowcasepro.form.configuration"
+
+  categoryshowcasepro.form.configuration:
+    class: 'PrestaShop\Module\categoryshowcasepro\Form\ConfigurationFormType'
+    arguments:
+      - "@categoryshowcasepro.service.category_choices_provider"
+
+  categoryshowcasepro.service.category_choices_provider:
+    class: PrestaShop\Module\categoryshowcasepro\Service\CategoryChoicesProvider
+    arguments:
+      - "@categoryshowcasepro.repository.category_repository"
+
+  categoryshowcasepro.repository.category_repository:
+    class: PrestaShop\Module\categoryshowcasepro\Repository\CategoryRepository
+    arguments:
+      - "@doctrine.dbal.default_connection"
